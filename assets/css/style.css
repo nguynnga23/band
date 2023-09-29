@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family:sans-serif;
+}
+/* 
+1.Từ ngoài vào trong
+2.Từ trên xuống dưới
+3.Tổng quan đến chi tiết
+*/
+/* 
+1.Vị trí
+2.Kích thước(with,height)
+3.Màu sắc
+4.Kiểu dáng(kiểu chữ,hình tròn,kiểu vuông,..)
+ */
+
+ #main{
+
+ }
+
+ #header{
+    height: 46px;
+    background-color: black;
+    /* display: flex;
+    justify-content: space-around; */
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 1;
+ }
+
+ .clear{
+    clear: both;
+ }
+
+ .color-text{
+    color: white !important;
+ }
+ #nav{
+    display: inline-block;
+ }
+ 
+ #nav li{
+    display: inline-block;
+ }
+ 
+ #nav > li > a{
+    color: white;
+    text-transform: uppercase;
+ }
+ #nav li a{
+    text-decoration: none;
+   
+    padding: 0 24px;
+    line-height: 46px;
+   
+    display: block;
+    position: relative;
+ }
+
+ #nav .subnav li:hover > a,
+ #nav li:hover > a{
+    background-color: #ccc;
+    color: black;
+ }
+
+ #nav .subnav{
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 10px gainsboro;
+    min-width: 160px
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav .subnav li {
+    display: block;
+
+}
+
+#nav .subnav li > a{
+    color: black;
+    padding: 0 16px;
+    line-height: 38px;
+}
+
+#nav .nav-down{
+    font-size: 14px;
+}
+
+#header #header-search{
+    color: white;
+    font-weight: bolder;
+    width: 62px;
+    height: 46px;
+    /* display: inline-block; */
+    float: right;
+    padding: 0 23px;
+    line-height: 46px;
+    cursor: pointer;
+}
+
+#header #header-search:hover {
+    background-color: #f44336!important;
+}
+
+ #slider{
+    /* background-color: gray; */
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/img/newjolk.jpg') top center /cover no-repeat;
+ }
+
+ #slider .slider-text{
+    color: white;
+    position: absolute;
+    text-align: center;
+    bottom: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#slider #text-heading{
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+#slider #text-description{
+    margin-top: 25px;
+}
+
+.content_section .section-heading{
+    padding: 64px 16px ;
+    width: 800px;
+    margin: auto;
+ }
+.section-heading .heading{
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 10px 0;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-align: center;
+ }
+
+.section-heading .sub-heading{
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+    margin: 15px 0;
+    opacity: 0.6;
+}
+
+.section-heading .about-text{
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+#content #band-member{
+    /* display: flex; */
+    /* float: left; */
+}
+
+#content .author{
+    float: left;
+    width: 33.33333%;
+    
+    text-align: center;
+}   
+
+#content .name{
+    margin: 15px 0;
+}
+#content .avt{
+    width: 150px;
+    border-radius: 4px;
+    margin: 0 0 16px;
+}
+
+/* Tour */
+#content .section-tour{
+    background-color: black;
+}
+
+#content .ticket-list{
+    background-color: white;
+    margin-top: 35px;
+    font-size: 15px;
+    list-style: none;    
+}
+
+#content .ticket-list li{
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    color: #757577;
+}
+
+.sold-out{
+    background-color: #f44336;
+    padding: 3px 6px;
+    margin-left: 10px;
+}
+
+.qty{
+    float: right;
+    background-color: black;
+    padding: 3px 6px;
+    border-radius: 50%;
+    margin-top: -3px;
+}
+
+.tour-space{
+    margin-top: 32px;
+    margin-left: -8px;
+    margin-right: -8px;
+    
+}
+
+.div-space{
+  float: left;
+  width: 33.33333%;
+  padding: 0 8px;
+  
+}
+
+.space-img{
+    width: 100%;
+}
+
+.space-text{
+  background-color: white;
+}
+
+.name-space{
+
+}
+
+.time-space{
+
+}
+
+.desc-space{
+
+}
+
+.btn-buy{
+
+}
+
+
+
+
+
+
+ #footer{
+
+ }
