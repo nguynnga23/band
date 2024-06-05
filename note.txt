@@ -1,0 +1,53 @@
+1. Phân tích
+    - Header
+    - Slider
+    - Content
+        + About
+        + Tour 
+        + Contact 
+        + Image 
+        + Footer
+    - Footer
+2. Dựng base (xây móng)
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        <div id ="main">
+            <div id ="header">
+            </div>
+
+            <div id ="slider">
+            </div>
+
+            <div id ="content">
+            </div>
+
+            <div id ="footer">
+            </div>
+        </div>
+    </body>
+    </html>
+
+3. Xây dựng từng phần theo phân tích
+4. Hoàn chỉnh
+
+Những thành phần thường gặp trên giao diện website
+1. Header (Đầu trang)
+2. Navigation (Điều hướng)
+3. Breadcrumb 
+4. Sidebar
+5. Slider 
+6. Content
+7. Footer
+8. Banner 
+
+
+
+***Phân biệt block, inline-block, inline
