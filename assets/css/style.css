@@ -1,10 +1,10 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-html{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+html {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 /* 
 1. Vị trí
@@ -12,47 +12,53 @@ html{
 3. Màu sắc
 4. Kiểu dáng (kiểu chữ) */
 
-#main{
-
+#main {
 }
-#main #header{
+#main #header {
     height: 46px;
     background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
-#header #nav{
+
+#header #nav {
     display: inline-block;
 }
 
-#nav>li{
+#nav > li {
     display: inline-block;
 }
- #nav li{
+#nav li {
     position: relative;
 }
 
-#nav > li > a{
-    color : #fff;
+#nav > li > a {
+    color: #fff;
     text-transform: uppercase;
     font-weight: 600;
 }
-#nav li a{
+#nav li a {
     text-decoration: none;
     line-height: 46px;
     padding: 0 24px;
     display: inline-block;
+    font-size: 15px;
 }
 #nav .subnav li:hover a,
-#nav > li:hover > a{ 
+#nav > li:hover > a {
     /* Con của li (a) được hover */
-    color : #000;
+    color: #000;
     background-color: #ccc;
 }
-#nav li:hover .subnav{
+#nav li:hover .subnav {
     display: block;
 }
-#nav .subnav{
-    display : none;
+#nav .subnav {
+    display: none;
     position: absolute;
     background-color: #fff;
     color: #000;
@@ -61,35 +67,57 @@ html{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-#nav .subnav a{
+#nav .subnav a {
     display: block;
     color: #000;
     padding: 0 16px;
 }
 
-
-#header .search-btn{
+#header .search-btn {
     float: right;
     color: #fff;
 }
 
-#header .search-btn:hover{
+#header .search-btn:hover {
     background-color: #f44336;
     cursor: pointer;
 }
 
-.search-btn .search-icon{
+.search-btn .search-icon {
     line-height: 46px;
     padding: 0 22px;
 }
 
-
-
-#main #slider{
+#main #slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/img/chicago.jpg') top center / cover no-repeat;
 }
-#main #content{
+
+#slider .text-content{
+    color: #fff;
+    position: absolute;
+    bottom: 47px;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    text-align: center;
+    width: 100%;
+}
+#slider .text-heading h2{
+    font-weight: 400;
+    font-size: 24px;
+}
+#slider .text-description{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 25px;
 
 }
-#main #footer{
+#main #content {
+    min-height: 1000px;
+    background-color: #ccc;
+}
+#main #footer {
 
 }
