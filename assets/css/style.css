@@ -11,9 +11,14 @@ html {
 2. Kích thước
 3. Màu sắc
 4. Kiểu dáng (kiểu chữ) */
-.clear{
+.clear {
     clear: both;
 }
+
+.text-white {
+    color: #fff !important;
+}
+
 #main {
 }
 #main #header {
@@ -25,7 +30,6 @@ html {
     right: 0;
     z-index: 1;
 }
-
 
 #header #nav {
     display: inline-block;
@@ -94,10 +98,10 @@ html {
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background: url('/assets/img/chicago.jpg') top center / cover no-repeat;
+    background: url("/assets/img/chicago.jpg") top center / cover no-repeat;
 }
 
-#slider .text-content{
+#slider .text-content {
     color: #fff;
     position: absolute;
     bottom: 47px;
@@ -106,64 +110,146 @@ html {
     text-align: center;
     width: 100%;
 }
-#slider .text-heading h2{
+#slider .text-heading h2 {
     font-weight: 400;
     font-size: 24px;
 }
-#slider .text-description{
+#slider .text-description {
     font-size: 15px;
     font-weight: bold;
     margin-top: 25px;
-
 }
 #main #content {
-    min-height: 1000px;
+    /* min-height: 1000px; */
 }
 
-#content .content-section{
+#content .content-section {
     width: 800px;
     padding: 64px 0;
     margin-left: auto;
     margin-right: auto;
 }
-#content .section-heading{
+#content .section-heading {
     text-align: center;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 30px;
     letter-spacing: 4px;
 }
-#content .section-sub-heading{
+#content .section-sub-heading {
     font-size: 15px;
     text-align: center;
     margin-top: 25px;
     font-style: italic;
     opacity: 0.6;
 }
-#content .about-text{
+#content .about-text {
     margin-top: 25px;
     text-align: justify;
     line-height: 1.4;
 }
 
-#content .member-list{
+#content .member-list {
     margin-top: 48px;
 }
-#content .member-item{
+#content .member-item {
     width: calc(100% / 3);
     float: left;
     text-align: center;
 }
 
-#content .member-name{
+#content .member-name {
     font-size: 15px;
-    
 }
-#content .member-img{
+#content .member-img {
     width: 154px;
     margin-top: 15px;
     border-radius: 4px;
 }
 
-#main #footer {
+#content .tour-section {
+    background-color: #000;
+}
 
+#content .tour-section .ticket-list {
+    background-color: #fff;
+    margin-top: 40px;
+    list-style-type: none;
+}
+#content .tour-section .ticket-list li {
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+}
+#content .tour-section .sold-out {
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+#content .tour-section .quantity {
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    color: #fff;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 50%;
+    margin-top: -3px;
+}
+
+/* Place */
+.place-list {
+    margin-top: 32px;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding-bottom: 48px;
+}
+.place-item {
+    float: left;
+    width: calc(100% / 3);
+    padding: 0 8px;
+}
+
+.place-item img {
+    width: 100%;
+    display: block;
+}
+
+.place-item img:hover {
+    opacity: 0.6;
+}
+
+.place-body {
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.place-heading {
+}
+.place-time {
+    margin-top: 16px;
+    color: #757575;
+}
+.place-desc {
+    margin-top: 16px;
+    line-height: 1.4;
+}
+.place-buy-btn {
+    margin-top: 16px;
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+.place-buy-btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+#main #footer {
 }
