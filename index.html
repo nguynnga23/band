@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Band</title>
-    <link rel="icon" type="image/x-icon" href="./assets/img/electric-guitar.png">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/img/electric-guitar.png"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
     <link
       rel="stylesheet"
       href="./assets/font/themify-icons-font/themify-icons/themify-icons.css"
@@ -14,6 +19,7 @@
       rel="stylesheet"
       href="./assets/font/fontawesome-free-6.4.0-web/css/all.css"
     />
+    <script src="./assets/js/index.js"></script>
   </head>
   <body>
     <div id="main">
@@ -26,7 +32,7 @@
           <li><a href="#tour">Tour</a></li>
           <li><a href="#contact">Contact</a></li>
           <li>
-            <a href="">
+            <a href="#">
               More
               <i class="fa-solid fa-caret-down"></i>
             </a>
@@ -45,6 +51,12 @@
           <i class="search-icon fa fa-search"></i>
         </div>
         <!-- End : search-btn -->
+
+        <!-- Begin : bar-btn -->
+        <div id="mobile-menu" class="bar-btn">
+          <i class="bar-icon fa fa-bars"></i>
+        </div>
+        <!-- End : bar-btn -->
       </div>
       <!-- End : header -->
 
@@ -240,11 +252,42 @@
         </div>
 
         <p class="copyright">
-          Powered by 
+          Powered by
           <a href="">w3.css</a>
         </p>
       </div>
       <!-- End : footer -->
     </div>
   </body>
+
+  <script>
+    var header = document.getElementById("header");
+    var mobileMenu = document.getElementById("mobile-menu");
+
+    // Đóng mở menu
+    mobileMenu.onclick = function () {
+      var isClosed = header.clientHeight === 46;
+      if (isClosed) {
+        header.style.height = "auto";
+      } else {
+        header.style.height = null;
+      }
+    };
+
+    // Tự động đóng khi chọn menu
+    var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+    for (var i = 0; i < menuItems.length; i++) {
+      var menuItem = menuItems[i];
+      menuItem.onclick = function (event) {
+        var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav')
+        if(!isParentMenu){
+          header.style.height = null;
+        }else{
+          event.preventDefault()
+        }
+        
+
+      };
+    }
+  </script>
 </html>

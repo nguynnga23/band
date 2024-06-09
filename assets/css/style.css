@@ -40,7 +40,7 @@ html {
     border: none;
     cursor: pointer;
 }
-
+#header .bar-btn:hover,
 .btn:hover {
     color: #000;
     background-color: #ccc;
@@ -110,7 +110,7 @@ html {
     text-decoration: none;
     line-height: 46px;
     padding: 0 24px;
-    display: inline-block;
+    display: block;
     font-size: 15px;
 }
 #nav .subnav li:hover a,
@@ -138,16 +138,28 @@ html {
     padding: 0 16px;
 }
 
+#header .bar-btn,
 #header .search-btn {
     float: right;
     color: #fff;
 }
 
+#header .bar-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
 #header .search-btn:hover {
     background-color: #f44336;
     cursor: pointer;
 }
 
+#header .bar-btn:hover{
+
+}
+
+#header .bar-btn,
 .search-btn .search-icon {
     line-height: 46px;
     padding: 0 22px;
@@ -184,9 +196,12 @@ html {
 
 #content .content-section {
     width: 800px;
+    max-width: 100%;
     padding: 112px 0;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 #content .section-heading {
     text-align: center;

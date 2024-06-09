@@ -1,0 +1,73 @@
+/* PC */
+@media (min-width: 1024px) {
+ 
+}
+
+/* TABLET */
+@media (min-width: 740px) and (max-width: 1023px) {
+ 
+}
+
+/* MOBILE */
+@media (max-width: 740px) {
+    #main #header {
+        overflow: hidden;
+    }
+    #header .bar-btn {
+        display: block;
+    }
+    #header .search-btn {
+        display: none;
+    }
+    #header #nav {
+        display: block;
+    }
+
+    #nav .subnav{
+        display: none;
+        position: initial;
+        background-color: dimgrey;
+    }
+
+    #nav .subnav a {
+        display: block;
+        color: #fff;
+        padding: 5px 30px;
+    }
+
+    #nav li:hover .subnav {
+        display: block;
+    }
+
+    #nav > li {
+        display: block;
+    }
+
+    #nav > li:first-child {
+        display: inline-block;
+    }
+
+    /* Comment */
+    
+    .col {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .col-half,
+    .col-third {
+        width: 100%;
+        margin: 0 0 16px;
+    }
+
+    .mt-8{
+        margin-top: 0;
+    }
+
+    #content .member-img {
+        width: 197px;
+        border-radius: 4px;
+    }
+
+  
+}
