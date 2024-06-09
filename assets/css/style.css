@@ -11,14 +11,55 @@ html {
 2. Kích thước
 3. Màu sắc
 4. Kiểu dáng (kiểu chữ) */
-.clear {
-    clear: both;
-}
+
+/* Common */
 
 .text-white {
     color: #fff !important;
 }
 
+.text-center{
+    text-align: center !important;
+}
+
+.mt-8{
+    margin-top: 8px;
+}
+
+.mt-16{
+    margin-top: 16px;
+}
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col{
+    float : left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-third{
+    width: calc(100% / 3);
+}
+
+.col-half{
+    width: calc(100% / 2);
+}
+
+.col-full{
+    width: 100%;
+}
+
+/* Main */
 #main {
 }
 #main #header {
@@ -151,11 +192,7 @@ html {
 #content .member-list {
     margin-top: 48px;
 }
-#content .member-item {
-    width: calc(100% / 3);
-    float: left;
-    text-align: center;
-}
+
 
 #content .member-name {
     font-size: 15px;
@@ -202,22 +239,15 @@ html {
 /* Place */
 .place-list {
     margin-top: 32px;
-    margin-left: -8px;
-    margin-right: -8px;
     padding-bottom: 48px;
 }
-.place-item {
-    float: left;
-    width: calc(100% / 3);
-    padding: 0 8px;
-}
 
-.place-item img {
+.place-img {
     width: 100%;
     display: block;
 }
 
-.place-item img:hover {
+.place-img:hover {
     opacity: 0.6;
 }
 
@@ -249,6 +279,36 @@ html {
 .place-buy-btn:hover {
     color: #000;
     background-color: #ccc;
+}
+
+/* Contact */
+.contact-content{
+    margin-top: 48px;
+}
+.contact-info i[class*="fa-"]{
+    width: 30px;
+    height: 18px;
+}
+
+.contact-info{
+    line-height: 1.6;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.contact-form .form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+
+}
+
+.contact-form .form-submit-btn{
+    float: right;
+    padding: 8px 15px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
 }
 
 #main #footer {

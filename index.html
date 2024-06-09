@@ -79,8 +79,8 @@
             veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
             ea commodo consequat.
           </p>
-          <div class="member-list">
-            <div class="member-item">
+          <div class="row member-list">
+            <div class="col col-third text-center">
               <p class="member-name">Name</p>
               <img
                 src="./assets/img/bandmember.jpg"
@@ -89,7 +89,7 @@
               />
             </div>
 
-            <div class="member-item">
+            <div class="col col-third text-center">
               <p class="member-name">Name</p>
               <img
                 src="./assets/img/bandmember.jpg"
@@ -98,7 +98,7 @@
               />
             </div>
 
-            <div class="member-item">
+            <div class="col col-third text-center">
               <p class="member-name">Name</p>
               <img
                 src="./assets/img/bandmember.jpg"
@@ -106,8 +106,6 @@
                 class="member-img"
               />
             </div>
-
-            <div class="clear"></div>
           </div>
         </div>
         <!-- Tour section -->
@@ -124,38 +122,44 @@
               <li>November <span class="quantity">3</span></li>
             </ul>
             <!-- Places -->
-            <div class="place-list">
-              <div class="place-item">
-                <img src="./assets/img/1.jpg" alt="">
+            <div class="row place-list">
+              <div class="col col-third">
+                <img src="./assets/img/1.jpg" alt="" class="place-img" />
                 <div class="place-body">
                   <h3 class="place-heading">New York</h3>
                   <p class="place-time">Fri 27 Nov 2016</p>
-                  <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                  <p class="place-desc">
+                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                  </p>
                   <a href="#" class="place-buy-btn">Buy Tickets</a>
                 </div>
               </div>
 
-              <div class="place-item">
-                <img src="./assets/img/2.jpg" alt="">
+              <div class="col col-third">
+                <img src="./assets/img/2.jpg" alt="" class="place-img" />
                 <div class="place-body">
                   <h3 class="place-heading">Paris</h3>
                   <p class="place-time">Sat 28 Nov 2016</p>
-                  <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                  <p class="place-desc">
+                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                  </p>
                   <a href="#" class="place-buy-btn">Buy Tickets</a>
                 </div>
               </div>
 
-              <div class="place-item">
-                <img src="./assets/img/3.jpg" alt="">
+              <div class="col col-third">
+                <img src="./assets/img/3.jpg" alt="" class="place-img" />
                 <div class="place-body">
                   <h3 class="place-heading">San Franciscok</h3>
                   <p class="place-time">Sun 29 Nov 2016</p>
-                  <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                  <p class="place-desc">
+                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                  </p>
                   <a href="#" class="place-buy-btn">Buy Tickets</a>
                 </div>
               </div>
 
-              <div class="clear"></div>
+              <!-- <div class="clear"></div> -->
             </div>
           </div>
         </div>
@@ -165,6 +169,55 @@
           <h2 class="section-heading">CONTACT</h2>
           <p class="section-sub-heading">Fan? Drop a note!</p>
           <p class="about-text"></p>
+
+          <div class="row contact-content">
+            <div class="col col-half contact-info">
+              <p><i class="fa fa-solid fa-location-dot"></i>Chicago, US</p>
+              <p><i class="fa fa-phone"></i>Phone: +00 151515</p>
+              <p><i class="fa fa-envelope"></i>Email: mail@mail.com</p>
+            </div>
+            <div class="col col-half contact-form">
+              <form action="">
+                <div class="row">
+                  <div class="col col-half">
+                    <input
+                      type="text"
+                      name=""
+                      placeholder="Name"
+                      required
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="col col-half">
+                    <input
+                      type="email"
+                      name=""
+                      placeholder="Email"
+                      required
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col col-full mt-8">
+                    <input
+                      type="text"
+                      name=""
+                      placeholder="Message"
+                      required
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+                <input
+                  class="form-submit-btn mt-16"
+                  type="submit"
+                  value="SEND"
+                />
+              </form>
+            </div>
+          </div>
         </div>
       </div>
       <!-- End : content -->
