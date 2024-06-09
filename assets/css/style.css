@@ -30,6 +30,24 @@ html {
     margin-top: 16px;
 }
 
+.btn {
+    margin-top: 16px;
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
+.float-right{
+    float: right;
+}
 .row{
     margin-left: -8px;
     margin-right: -8px;
@@ -166,7 +184,7 @@ html {
 
 #content .content-section {
     width: 800px;
-    padding: 64px 0;
+    padding: 112px 0;
     margin-left: auto;
     margin-right: auto;
 }
@@ -203,6 +221,7 @@ html {
     border-radius: 4px;
 }
 
+/* Tour */
 #content .tour-section {
     background-color: #000;
 }
@@ -239,7 +258,6 @@ html {
 /* Place */
 .place-list {
     margin-top: 32px;
-    padding-bottom: 48px;
 }
 
 .place-img {
@@ -267,19 +285,7 @@ html {
     margin-top: 16px;
     line-height: 1.4;
 }
-.place-buy-btn {
-    margin-top: 16px;
-    color: #fff;
-    background-color: #000;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: inline-block;
-}
 
-.place-buy-btn:hover {
-    color: #000;
-    background-color: #ccc;
-}
 
 /* Contact */
 .contact-content{
@@ -310,6 +316,36 @@ html {
     color: #fff;
     border: 1px solid #000;
 }
-
-#main #footer {
+/* Map section */
+.map-section .map-img{
+    width: 100%;
 }
+
+/* Footer */
+#main #footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .social-list{}
+
+#footer .social-list a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 24px;
+}
+#footer .copyright a:hover,
+#footer .social-list a:hover{
+    color: rgba(0, 0, 0, 0.4);
+}
+#footer .copyright{
+    display: inline-block;
+    margin: 15px 0;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyright a{
+    color: rgba(0, 0, 0, 0.6);
+}
+
